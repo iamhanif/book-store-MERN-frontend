@@ -8,7 +8,7 @@ import Spinner from "./../../components/Spinner.jsx";
 
 export default function Home() {
   const [books, setBooks] = useState([]);
-  const [showType, setShowType] = useState([]);
+  const [showType, setShowType] = useState("table");
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -45,11 +45,12 @@ export default function Home() {
       </div>
 
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl my-8">Book List</h1>
+        <h1 className="text-3xl my-8">Books List</h1>
         <Link to="/books/create">
           <MdOutlineAddBox className="text-sky-800 text-4xl" />
         </Link>
       </div>
+
       {loading ? (
         <Spinner />
       ) : showType === "table" ? (

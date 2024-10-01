@@ -44,7 +44,7 @@ function EditBook() {
       })
       .catch((error) => {
         setLoading(false);
-        alert("An eeror happened. Please check console ");
+        alert("An eeror happened. Please check console");
         console.log(error);
       });
   };

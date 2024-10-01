@@ -34,7 +34,7 @@ export default function DeleteBook() {
         <h3 className="text-2xl">Are you sure you want to delete this book?</h3>
 
         <button
-          className="p-4 bg-red-600 text-white m-8 w-full"
+          className="p-4 bg-red-600 text-white m-8 w-full rounded-lg"
           onClick={handleDeleteBook}
         >
           Yes, Delete it
